@@ -21,4 +21,13 @@
         completions."
     </string>
     <string name="title_activity_account_authenticator">AccountAuthenticatorActivity</string>
+
+    <!-- Strings related to logout -->
+    <string name="logout">Logout</string>
+    <string name="logout_title">Logout from Moodle</string>
+    <string name="logout_message">Are you sure you want to logout from Moodle?</string>
+
+    <!-- Strings related to dialog -->
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
 </resources>

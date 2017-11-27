@@ -3,6 +3,7 @@ package app.moodle.moodle.services;
 import java.util.List;
 import java.util.Map;
 
+import app.moodle.moodle.models.Course;
 import app.moodle.moodle.models.Token;
 import app.moodle.moodle.models.User;
 import retrofit2.Call;
@@ -26,4 +27,7 @@ public interface MoodleService {
     Call<List<User>> userInfo(@QueryMap Map<String, String> params,
                               @Field("field") String field,
                               @Field("values[0]") String value);
+
+    @GET("/webservice/rest/server.php")
+    Call<List<Course>> listCourses(@QueryMap Map<String, String> params);
 }
